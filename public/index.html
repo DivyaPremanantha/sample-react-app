@@ -32,20 +32,7 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <!-- <div id="root"></div> -->
   <!-- Container for the rendered Markdown content -->
-  <div style="display: flex;">
-
-    <div id="markdown-container" style="flex: 1; padding: 16px; border: 1px solid #ccc; margin: 8px;">
-      <h2>Column 1</h2>
-
-      <p>This is the content for the first column.</p>
-    </div>
-
-    <div id="markdown-container2" style="flex: 1; padding: 16px; border: 1px solid #ccc; margin: 8px;">
-      <h2>Column 2</h2>
-
-      <p>This is the content for the second column.</p>
-    </div>
-
+  <div id="org-landing-page"style="display: flex;">
   </div>
 
   <script>function loadAndRenderMarkdown(filePath, targetElementId) {
@@ -65,8 +52,9 @@
 }
 
 // Load and render multiple Markdown files
-loadAndRenderMarkdown('https://raw.githubusercontent.com/DivyaPremanantha/sample-react-app/main/files/ABCOrganization/OrgLandingPage/content/org-landing-page-section-one.md', 'markdown-container');
-loadAndRenderMarkdown('https://raw.githubusercontent.com/DivyaPremanantha/sample-react-app/main/files/ABCOrganization/OrgLandingPage/content/org-landing-page-section-two.md', 'markdown-container2');
+loadAndRenderMarkdown('https://raw.githubusercontent.com/DivyaPremanantha/sample-react-app/main/files/ABCOrganization/OrgLandingPage/template/org-landing-page.html', 'org-landing-page-section-one');
+loadAndRenderMarkdown('https://raw.githubusercontent.com/DivyaPremanantha/sample-react-app/main/files/ABCOrganization/OrgLandingPage/content/org-landing-page-section-one.md', 'org-landing-page-section-one');
+loadAndRenderMarkdown('https://raw.githubusercontent.com/DivyaPremanantha/sample-react-app/main/files/ABCOrganization/OrgLandingPage/content/org-landing-page-section-two.md', 'org-landing-page-section-two');
 
 </script>
   <!--
