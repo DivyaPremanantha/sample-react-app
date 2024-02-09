@@ -1,4 +1,4 @@
-# Welcome to XYZ Organization
+# XYZ Organization Structure
 
 **Empowering Change, Building Tomorrow**
 
