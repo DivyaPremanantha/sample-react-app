@@ -40,13 +40,14 @@
       <p>This is the content for the first column.</p>
     </div>
 
-    <div style="flex: 1; padding: 16px; border: 1px solid #ccc; margin: 8px;">
+    <div id="markdown-container2" style="flex: 1; padding: 16px; border: 1px solid #ccc; margin: 8px;">
       <h2>Column 2</h2>
 
       <p>This is the content for the second column.</p>
     </div>
 
   </div>
+
   <script>function loadAndRenderMarkdown(filePath, targetElementId) {
     console.log('Loading Markdown file:', filePath);
     // Use fetch API to load the Markdown file
@@ -64,8 +65,10 @@
 }
 
 // Load and render multiple Markdown files
-loadAndRenderMarkdown('/example1.md', 'markdown-container');
-loadAndRenderMarkdown('/example2.html', 'markdown-container2');</script>
+loadAndRenderMarkdown('https://raw.githubusercontent.com/DivyaPremanantha/sample-react-app/main/public/files/ABCOrganization/OrgLandingPage/content/org-landing-page-section-one.md', 'markdown-container');
+loadAndRenderMarkdown('https://raw.githubusercontent.com/DivyaPremanantha/sample-react-app/main/public/files/ABCOrganization/OrgLandingPage/content/org-landing-page-section-two.md', 'markdown-container2');
+
+</script>
   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
