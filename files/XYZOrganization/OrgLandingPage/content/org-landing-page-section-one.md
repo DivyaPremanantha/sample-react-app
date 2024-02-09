@@ -1,5 +1,5 @@
 # Welcome to XYZ Organization
 
-<img src="images/org-landing-page.jpeg?raw=true" width="600"/>
+<img src="images/org-landing-page.jpeg?raw=true" height: 500; width: 100%;/>
 
 
