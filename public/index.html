@@ -24,39 +24,42 @@
     -->
   <title>React App</title>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <base href="https://www.w3schools.com/">
+  <base href="https://raw.githubusercontent.com/DivyaPremanantha/sample-react-app/main/files/">
 
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <script>
+    const pathname = window.location.pathname;
+    console.log(pathname.replace('/',''));
+
+  </script>
   <!-- <div id="root"></div> -->
   <!-- Container for the rendered Markdown content -->
-  <div id="org-landing-page"style="display: flex;">
+  <div id="org-landing-page" style="display: flex;">
   </div>
 
   <script>function loadAndRenderMarkdown(filePath, targetElementId) {
-    console.log('Loading Markdown file:', filePath);
-    // Use fetch API to load the Markdown file
-    fetch(filePath)
+      // Use fetch API to load the Markdown file
+      fetch(filePath)
         .then(response => response.text())
         .then(markdownContent => {
-            console.log('Rendering Markdown content:', markdownContent);
-            // Use marked library to convert Markdown to HTML
-            const htmlContent = marked.parse(markdownContent);
+          console.log(markdownContent);
+          // Use marked library to convert Markdown to HTML
+          const htmlContent = marked.parse(markdownContent);
 
-            // Insert the HTML content into the specified target element
-            document.getElementById(targetElementId).innerHTML = htmlContent;
+          // Insert the HTML content into the specified target element
+          document.getElementById(targetElementId).innerHTML = htmlContent;
         })
         .catch(error => console.error('Error loading Markdown file:', error));
-}
+    }
 
-// Load and render multiple Markdown files
-loadAndRenderMarkdown('https://raw.githubusercontent.com/DivyaPremanantha/sample-react-app/main/files/ABCOrganization/OrgLandingPage/template/org-landing-page.html', 'org-landing-page-section-one');
-loadAndRenderMarkdown('https://raw.githubusercontent.com/DivyaPremanantha/sample-react-app/main/files/ABCOrganization/OrgLandingPage/content/org-landing-page-section-one.md', 'org-landing-page-section-one');
-loadAndRenderMarkdown('https://raw.githubusercontent.com/DivyaPremanantha/sample-react-app/main/files/ABCOrganization/OrgLandingPage/content/org-landing-page-section-two.md', 'org-landing-page-section-two');
+    // Load and render multiple Markdown files
+    loadAndRenderMarkdown(pathname.replace('/','') + '/OrgLandingPage/template/org-landing-page.html', 'org-landing-page');
+    loadAndRenderMarkdown(pathname.replace('/','') + '/OrgLandingPage/content/org-landing-page-section-one.md', 'org-landing-page-section-one');
+    loadAndRenderMarkdown(pathname.replace('/','') + '/OrgLandingPage/content/org-landing-page-section-two.md', 'org-landing-page-section-two');
 
-</script>
+  </script>
   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
