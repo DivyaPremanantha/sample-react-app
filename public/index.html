@@ -24,19 +24,17 @@
     -->
   <title>React App</title>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <base href="https://raw.githubusercontent.com/DivyaPremanantha/sample-react-app/main/files/ + pathname.replace('/','')">
-
+  <script type="text/javascript">
+    document.head.innerHTML = document.head.innerHTML + "<base href='https://raw.githubusercontent.com/DivyaPremanantha/sample-react-app/main/files" + window.location.pathname + "/OrgLandingPage/'/>";
+    console.log(document.querySelector("base"));
+  </script>
 </head>
 
 <body>
-  <script>
-    const pathname = window.location.pathname;
-    console.log(pathname.replace('/',''));
-
-  </script>
   <!-- <div id="root"></div> -->
   <!-- Container for the rendered Markdown content -->
   <div id="org-landing-page" style="display: flex;">
+    <img src="image/one.png" alt="">
   </div>
 
   <script>function loadAndRenderMarkdown(filePath, targetElementId) {
@@ -55,9 +53,10 @@
     }
 
     // Load and render multiple Markdown files
-    loadAndRenderMarkdown(pathname.replace('/','') + '/OrgLandingPage/template/org-landing-page.html', 'org-landing-page');
-    loadAndRenderMarkdown(pathname.replace('/','') + '/OrgLandingPage/content/org-landing-page-section-one.md', 'org-landing-page-section-one');
-    loadAndRenderMarkdown(pathname.replace('/','') + '/OrgLandingPage/content/org-landing-page-section-two.md', 'org-landing-page-section-two');
+    loadAndRenderMarkdown('template/org-landing-page.html', 'org-landing-page');
+    loadAndRenderMarkdown('content/org-landing-page-section-one.md', 'org-landing-page-section-one');
+    loadAndRenderMarkdown('content/org-landing-page-section-two.md', 'org-landing-page-section-two');
+    loadAndRenderMarkdown('content/org-landing-page-section-three.md', 'org-landing-page-section-three');
 
   </script>
   <!--

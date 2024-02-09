@@ -7,6 +7,6 @@ At ABC Organization, we are dedicated to making a positive impact on communities
 
 At ABC Organization, we are dedicated to making a positive impact on communities worldwide. Our mission is to [briefly describe your mission and goals]. Since 2015, we have been tirelessly working towards creating a better world for all.
 
-<img src="/OrgLandingPage/images/org-landing-page.jpeg?raw=true" width="1000"/>
+<img src="images/org-landing-page.jpeg?raw=true" width="1000"/>
 
 
