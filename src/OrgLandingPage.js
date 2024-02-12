@@ -6,7 +6,7 @@ import rehypeRaw from 'rehype-raw'
 
 function OrgLandingPage() {
   return (
-    document.head.innerHTML = document.head.innerHTML + "<base href='https://raw.githubusercontent.com/DivyaPremanantha/sample-react-app/main/files" + window.location.pathname + "/'/>",
+    document.head.innerHTML = document.head.innerHTML + "<base href='https://raw.githubusercontent.com/DivyaPremanantha/sample-react-app/main/files" + window.location.pathname + "/OrgLandingPage/'/>",
     console.log(document.querySelector("base")),
     <div id="org-landing-page" style="display: flex;"> </div>,
 

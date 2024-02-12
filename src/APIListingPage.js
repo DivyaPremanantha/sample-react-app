@@ -7,7 +7,7 @@ function APIListingPage() {
   if (orgName == "ABCOrganization") {
     return (
       <div>
-        <li> <a href="http://localhost:3000/XYZOrganization/APIListingPage/paymentsAPI"> Payment API </a></li>
+        <li> <a href="http://localhost:3000/ABCOrganization/APILandingPage/paymentsAPI"> Payment API </a></li>
         <li>API2</li>
         <li>API3</li>
       </div>

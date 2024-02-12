@@ -9,7 +9,7 @@ function APILandingPage() {
     console.log(apiId);
 
     return (
-        document.head.innerHTML = document.head.innerHTML + "<base href='https://raw.githubusercontent.com/DivyaPremanantha/sample-react-app/main/files" + window.location.pathname + "/OrgLandingPage/'/>",
+        document.head.innerHTML = document.head.innerHTML + "<base href='https://raw.githubusercontent.com/DivyaPremanantha/sample-react-app/main/files" + window.location.pathname + "/'/>",
 
         console.log(document.querySelector("base")),
         <div id="api-detail-page" style="display: flex;"> </div>,
@@ -50,4 +50,4 @@ function loadAndRenderHTML(filePath, targetElementId) {
         .catch(error => console.error('Error loading Markdown file:', error));
 }
 
-export default APIDetailPage;
+export default APILandingPage;

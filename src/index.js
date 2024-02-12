@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import OrgLandingPage from './OrgLandingPage';
-import APILandingPage from './APIListingPage';
+import APIListingPage from './APIListingPage';
 import APILandingPage from './APILandingPage';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -13,7 +13,7 @@ root.render(
   <Routes>
     <Route path="/:orgName" element={<OrgLandingPage />} />
     <Route path="/:orgName/APIListingPage" element={<APIListingPage />} />
-    <Route path="/:orgName/APIListingPage/:apiId" element={<APILandingPage />} />
+    <Route path="/:orgName/APILandingPage/:apiId" element={<APILandingPage />} />
   </Routes>
 </BrowserRouter>
 );
