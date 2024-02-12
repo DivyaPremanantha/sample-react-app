@@ -1,4 +1,4 @@
-# Welcome to Accounts API API
+# Welcome to Accounts API
 
 ## Powering Your Applications with Accounts API API
 
