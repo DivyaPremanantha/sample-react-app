@@ -1,1 +1,1 @@
-<img src="images/api-landing-page.jpg?raw=true" width="900"/>
+<img src="images/api-landing-page.jpeg?raw=true" width="900"/>
