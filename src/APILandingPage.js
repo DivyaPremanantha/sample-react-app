@@ -12,7 +12,6 @@ function APILandingPage() {
         document.head.innerHTML = document.head.innerHTML + "<base href='https://raw.githubusercontent.com/DivyaPremanantha/sample-react-app/main/files" + window.location.pathname + "/'/>",
 
         console.log(document.querySelector("base")),
-        <div id="api-detail-page" style="display: flex;"> </div>,
 
         // Load and render multiple Markdown files
         loadAndRenderHTML('template/api-landing-page.html', 'api-landing-page'),
@@ -42,7 +41,8 @@ function loadAndRenderHTML(filePath, targetElementId) {
     fetch(filePath)
         .then(response => response.text())
         .then(markdownContent => {
-            console.log(markdownContent);
+            console.log(targetElementId);
+            console.log(document);
 
             // Insert the HTML content into the specified target element
             document.getElementById(targetElementId).innerHTML = markdownContent;
