@@ -4,7 +4,7 @@ import './OrgLandingPage.css';
 import { createRoot } from 'react-dom/client'
 import rehypeRaw from 'rehype-raw'
 
-function APIDetailPage() {
+function APILandingPage() {
     const { apiId } = useParams();
     console.log(apiId);
 
@@ -15,9 +15,9 @@ function APIDetailPage() {
         <div id="api-detail-page" style="display: flex;"> </div>,
 
         // Load and render multiple Markdown files
-        loadAndRenderHTML('template/api-detail-page.html', 'api-detail-page'),
-        loadAndRenderMarkdown('content/api-detail-page-section-one.md', 'api-detail-page-section-one'),
-        loadAndRenderMarkdown('content/api-detail-page-section-two.md', 'api-detail-page-section-two')
+        loadAndRenderHTML('template/api-landing-page.html', 'api-landing-page'),
+        loadAndRenderMarkdown('content/api-landing-page-section-one.md', 'api-landing-page-section-one'),
+        loadAndRenderMarkdown('content/api-landing-page-section-two.md', 'api-landing-page-section-two')
     );
 }
 
