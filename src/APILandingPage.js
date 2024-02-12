@@ -16,7 +16,8 @@ function APILandingPage() {
         // Load and render multiple Markdown files
         loadAndRenderHTML('template/api-landing-page.html', 'api-landing-page'),
         loadAndRenderMarkdown('content/api-landing-page-section-one.md', 'api-landing-page-section-one'),
-        loadAndRenderMarkdown('content/api-landing-page-section-two.md', 'api-landing-page-section-two')
+        loadAndRenderMarkdown('content/api-landing-page-section-two.md', 'api-landing-page-section-two'),
+        loadAndRenderMarkdown('content/api-landing-page-section-three.md', 'api-landing-page-section-three')
     );
 }
 
