@@ -19,3 +19,10 @@ Witness the impact of our initiatives:
 - **[Insert Success Story 1]:** [Brief description of success story]
 - **[Insert Success Story 2]:** [Brief description of success story]
 
+## Get Involved
+
+Join us in creating a positive change:
+
+- **Volunteer:** Be part of our volunteer community and contribute to impactful projects.
+- **Donate:** Support our initiatives financially to help us reach more lives.
+- **Events:** Attend our upcoming events and be part of a movement for change.
